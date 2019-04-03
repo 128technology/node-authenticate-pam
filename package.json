@@ -4,16 +4,27 @@
   "gypfile": true,
   "main": "build/Release/authenticate_pam.node",
   "description": "Asynchronous PAM authentication for Node.JS",
-  "homepage": "https://github.com/RushPL/node-authenticate-pam",
+  "homepage": "https://github.com/128technology/node-authenticate-pam",
   "author": {
     "name": "Damian Kaczmarek",
     "email": "damian@codecharm.co.uk"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RushPL/node-authenticate-pam.git"
+    "url": "https://github.com/128technology/node-authenticate-pam.git"
   },
   "dependencies": {
-    "nan": "^2.3.2"
+    "nan": "^2.3.2",
+    "node-pre-gyp": "^0.12.0"
+  },
+  "scripts": {
+    "install": "node-pre-gyp install --fallback-to-build"
+  },
+  "binary": {
+    "module_name": "authenticate_pam",
+    "module_path": "./build/Release/",
+    "host": "https://github.com",
+    "remote_path": "./128technology/node-authenticate-pam/releases/download/v{version}/",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz"
   }
 }
