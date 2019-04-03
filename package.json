@@ -1,5 +1,5 @@
 {
-  "name": "authenticate-pam",
+  "name": "authenticate-pam-prebuilt",
   "version": "1.0.2",
   "gypfile": true,
   "main": "build/Release/authenticate_pam.node",
