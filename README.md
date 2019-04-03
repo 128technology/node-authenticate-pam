@@ -1,7 +1,7 @@
 authenticate-pam-prebuilt
 =====================
 
-Asynchronous PAM authentication for NodeJS. This repository provides prebuilt version of node-authenticate-pam.
+Asynchronous PAM authentication for NodeJS. This repository provides prebuilt versions of node-authenticate-pam.
 
 *You will most likely need to run it as root in most common environments!*
 **Running as non-root on my system (openSUSE 12.1) made a segfault happen somewhere in `libpam`! - but seems ok on on openSUSE Leap 42.2**
